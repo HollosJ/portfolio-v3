@@ -31,7 +31,7 @@
         <span>Front-end Developer</span>
       </div>
 
-      <div class="flex justify-center gap-2 md:justify-end">
+      <div class="grid grid-cols-2 gap-2 md:flex md:justify-end">
         <Button
           href="https://drive.google.com/file/d/1025ja3ser6s5GgM5G2Btenl25hoAtggZ/view"
           class="text-sm hover:border-black">Download CV</Button
