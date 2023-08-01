@@ -9,7 +9,7 @@
   const skills = [
     { icon: 'devicon-html5-plain', name: 'HTML' },
     { icon: 'devicon-css3-plain', name: 'CSS' },
-    { icon: 'devicon-javascript-plain', name: 'JavaScript' },
+    { icon: 'devicon-javascript-plain', name: 'JS' },
     {
       icon: 'devicon-react-original',
       name: 'React',
@@ -33,10 +33,12 @@
 <div class="grid gap-4">
   <Heading>Skills</Heading>
 
-  <div class="grid grid-cols-3 gap-4 md:grid-cols-5">
+  <div class="grid justify-between grid-cols-2 gap-4 md:gap-8 md:grid-cols-4">
     {#each skills as skill}
       <!-- Skill -->
-      <div class="grid transition-all justify-items-center group">
+      <div
+        class="grid p-2 transition-all rounded bg-black/10 dark:bg-white/10 justify-items-center group"
+      >
         <!-- Icon -->
         <div
           class="h-8 text-2xl transition-all group-hover:rotate-3 group-hover:scale-105"
@@ -48,12 +50,6 @@
           {#if !skill.svg}
             <i class={`${skill.icon} shadow-2xl`} />
           {/if}
-        </div>
-
-        <div class="w-16 h-[2px] skew-x-2 overflow-hidden">
-          <div
-            class="w-full h-full transition-all bg-gradient-to-r origin-right from-jurple to-pink-500 group-hover:scale-[1.50]"
-          />
         </div>
 
         <!-- Name -->
