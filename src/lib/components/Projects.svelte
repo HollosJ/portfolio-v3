@@ -10,8 +10,8 @@
   let loading = true;
 
   const client = createClient({
-    space: import.meta.env.VITE_CONTENTFUL_SPACE_ID,
-    accessToken: import.meta.env.VITE_CONTENTFUL_API_KEY,
+    space: import.meta.env.CONTENTFUL_SPACE_ID,
+    accessToken: import.meta.env.CONTENTFUL_API_KEY,
   });
 
   onMount(async () => {
