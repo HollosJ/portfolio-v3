@@ -8,19 +8,13 @@
 </script>
 
 <div class="container relative grid gap-16 py-16 md:py-24 md:max-w-screen-md">
-  <div class="grid gap-4 justify-items-center md:grid-cols-2">
+  <div class="grid gap-4 md:gap-8 justify-items-center md:grid-cols-2">
     <!-- Text -->
     <div
       class="relative grid content-center gap-4 text-lg text-center md:gap-8 md:text-right"
     >
       <div class="grid">
-        <p class="relative">
-          <span class="md:absolute md:bottom-full md:right-0 md:animate-wiggle">
-            &#128075;
-          </span>
-
-          Hi! I'm
-        </p>
+        <p class="relative">Hi! I'm</p>
 
         <h1
           class="text-4xl font-black text-transparent bg-clip-text md:text-7xl bg-gradient-to-r from-jurple to-pink-600"
@@ -45,7 +39,9 @@
     </div>
 
     <!-- Headshot -->
-    <div class="relative flex justify-start max-w-xs group">
+    <div
+      class="relative flex max-w-[200px] md:max-w-[300px] md:justify-self-start aspect-square group"
+    >
       <div
         class="absolute w-full h-full transition shadow-2xl left-2 top-2 -z-0 bg-gradient-to-tr from-jurple to-pink-600"
       />
