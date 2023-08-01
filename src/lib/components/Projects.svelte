@@ -9,6 +9,8 @@
 
   let loading = true;
 
+  console.log(process.env.NODE_ENV);
+
   const client = createClient({
     space:
       process.env.NODE_ENV === 'development'
