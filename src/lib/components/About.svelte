@@ -29,5 +29,7 @@
     and sometimes more exciting tooling such as Svelte and Astro.
   </p>
 
-  <ViewCVCTA wiggle={true} />
+  <div class="justify-self-start">
+    <ViewCVCTA wiggle={true} />
+  </div>
 </div>
