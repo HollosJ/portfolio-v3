@@ -3,7 +3,7 @@
 </script>
 
 <a
-  class={`flex justify-self-center items-center gap-2 transition p-4 md:hover:brightness-95 group md:hover:rotate-3 bg-gradient-to-tr from-jurple to-pink-600 md:text-xl text-white ${
+  class={`flex justify-center items-center gap-2 transition p-4 md:hover:brightness-95 group md:hover:rotate-3 bg-gradient-to-tr from-jurple to-pink-600 md:text-xl text-white ${
     wiggle && 'animate-wiggle'
   }`}
   href="https://drive.google.com/file/d/1025ja3ser6s5GgM5G2Btenl25hoAtggZ/view"
