@@ -27,10 +27,6 @@
       icon: 'devicon-svelte-plain',
       name: 'Svelte',
     },
-    {
-      icon: 'devicon-vscode-plain',
-      name: 'VS Code',
-    },
   ];
 </script>
 
