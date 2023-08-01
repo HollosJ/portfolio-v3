@@ -3,7 +3,7 @@
   import ViewCVCTA from './ViewCVCTA.svelte';
 </script>
 
-<div id="about" class="grid gap-4 sm:text-xl">
+<div id="about" class="grid gap-4 sm:text-xl scroll-mt-16">
   <Heading>About Me</Heading>
 
   <p>
