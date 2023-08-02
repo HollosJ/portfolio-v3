@@ -4,6 +4,7 @@
 
   import Heading from './Heading.svelte';
   import Modal from './Modal.svelte';
+  import Image from './Image.svelte';
 
   let projects = [];
 
@@ -60,12 +61,12 @@
         on:click={() => handleOpen(key)}
         aria-label={`View ${project.title}`}
       >
-        <img
-          class="object-cover w-full aspect-video"
-          width="200"
-          height="200"
-          src={project.image.fields.file.url}
+        <Image
+          src={`${project.image.fields.file.url}?fm=webp`}
           alt={project.title}
+          width="640"
+          height="360"
+          class="object-cover w-full aspect-video"
         />
       </button>
     {/each}
