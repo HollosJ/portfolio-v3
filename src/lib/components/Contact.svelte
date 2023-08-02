@@ -1,5 +1,6 @@
 <script>
   import Heading from './Heading.svelte';
+  import Button from './Button.svelte';
 
   const links = [
     {
@@ -28,19 +29,15 @@
 <div class="grid gap-4">
   <Heading>Get In Touch</Heading>
 
-  <ul class="flex flex-wrap items-center content-center gap-4">
-    {#each links as link, i}
-      <li class="group">
-        <a
-          class="flex items-center gap-2 p-4 py-2 transition border-2 border-black md:text-xl md:hover:brightness-95 group md:hover:rotate-3 dark:border-white"
-          href={link.url}
-          target="_blank"
-        >
-          <span>{@html link.icon}</span>
+  <ul
+    class="grid items-center content-center gap-4 sm:grid-cols-2 md:grid-cols-4"
+  >
+    {#each links as link}
+      <Button href={link.url} style="outline-black">
+        <span>{@html link.icon}</span>
 
-          <span>{link.text}</span>
-        </a>
-      </li>
+        <span>{link.text}</span>
+      </Button>
     {/each}
   </ul>
 </div>
