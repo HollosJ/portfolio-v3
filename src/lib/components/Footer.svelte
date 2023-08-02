@@ -13,6 +13,7 @@
     <button
       class="relative w-6 h-6 overflow-hidden transition hover:opacity-75"
       on:click={toggleDarkMode}
+      aria-label="Toggle dark mode"
     >
       <svg
         class={`w-full h-full absolute left-0 top-0 fill-yellow-300 transition transform duration-500 ${

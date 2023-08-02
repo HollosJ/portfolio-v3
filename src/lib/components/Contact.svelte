@@ -29,7 +29,7 @@
 <div class="grid gap-4">
   <Heading>Get In Touch</Heading>
 
-  <ul
+  <div
     class="grid items-center content-center gap-4 sm:grid-cols-2 md:grid-cols-4"
   >
     {#each links as link}
@@ -39,5 +39,5 @@
         <span>{link.text}</span>
       </Button>
     {/each}
-  </ul>
+  </div>
 </div>
