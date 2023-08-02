@@ -3,7 +3,8 @@
     document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
   };
 
-  import Me from '../../assets/me.jpeg';
+  import Me from '../../assets/me.webp';
+  import Image from './Image.svelte';
   import Button from './Button.svelte';
 </script>
 
@@ -46,9 +47,11 @@
         class="absolute w-full h-full transition shadow-2xl left-2 top-2 -z-0 bg-gradient-to-tr from-jurple to-pink-600"
       />
 
-      <img
+      <Image
         class="relative h-full transition md:group-hover:-translate-x-1 md:grayscale md:group-hover:grayscale-0 md:group-hover:-translate-y-1"
         src={Me}
+        width="500"
+        height="500"
         alt="Me"
       />
     </div>
