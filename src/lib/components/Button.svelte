@@ -1,6 +1,6 @@
 <script>
   export let href;
-  export let style = 'outline-black hover:invert';
+  export let style = 'outline-black';
 
   let classes =
     'py-2 px-4 border-2 items-center justify-center transition flex text-center gap-2';
