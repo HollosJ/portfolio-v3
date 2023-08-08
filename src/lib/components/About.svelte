@@ -20,16 +20,16 @@
   </p>
 
   <p>
-    💼 I'm currently working as a developer at <a
+    💼 In my most recent position as a developer at <a
       class="font-bold text-pink-500 transition hover:text-jurple shadow-white"
       href="https://onlinemortgageadvisor.co.uk"
       target="_blank"
       rel="noopener">OMA</a
-    >. Here I am using such technologies as PHP, Tailwind, Alpine.js, WordPress
-    and sometimes more exciting tooling such as Svelte and Astro.
+    >, I was using such technologies as PHP, Tailwind, Alpine.js, WordPress and
+    sometimes more modern and exciting tooling such as Svelte and Astro.
   </p>
 
-  <div class="justify-self-start">
+  <div class="justify-self-center">
     <ViewCVCTA wiggle={true} />
   </div>
 </div>
