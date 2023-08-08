@@ -29,12 +29,12 @@
       <div class="grid grid-cols-2 gap-2 md:flex md:justify-end">
         <Button
           href="https://drive.google.com/file/d/1025ja3ser6s5GgM5G2Btenl25hoAtggZ/view"
-          class="text-sm hover:border-black">Download CV</Button
+          class="text-sm dark:border-white">Download CV</Button
         >
 
         <Button
           href="mailto:hollosj99@gmail.com"
-          class="text-sm hover:border-black">Email Me</Button
+          class="text-sm dark:border-white">Email Me</Button
         >
       </div>
     </div>
