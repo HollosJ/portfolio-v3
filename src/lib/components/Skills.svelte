@@ -1,4 +1,5 @@
 <script>
+  import Animate from './Animate.svelte';
   import Heading from './Heading.svelte';
 
   const svgs = {
@@ -36,25 +37,27 @@
   <div class="grid justify-between grid-cols-2 gap-4 md:gap-8 md:grid-cols-4">
     {#each skills as skill}
       <!-- Skill -->
-      <div
-        class="grid p-2 transition-all rounded bg-black/10 dark:bg-white/10 justify-items-center group"
-      >
-        <!-- Icon -->
+      <Animate>
         <div
-          class="h-8 text-2xl transition-all group-hover:rotate-3 group-hover:scale-105"
+          class="grid p-2 transition-all rounded bg-black/10 dark:bg-white/10 justify-items-center group"
         >
-          {#if skill.svg}
-            {@html skill.svg}
-          {/if}
+          <!-- Icon -->
+          <div
+            class="h-8 text-2xl transition-all group-hover:rotate-3 group-hover:scale-105"
+          >
+            {#if skill.svg}
+              {@html skill.svg}
+            {/if}
 
-          {#if !skill.svg}
-            <i class={`${skill.icon} shadow-2xl`} />
-          {/if}
+            {#if !skill.svg}
+              <i class={`${skill.icon} shadow-2xl`} />
+            {/if}
+          </div>
+
+          <!-- Name -->
+          <span>{skill.name}</span>
         </div>
-
-        <!-- Name -->
-        <span>{skill.name}</span>
-      </div>
+      </Animate>
     {/each}
   </div>
 </div>

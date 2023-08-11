@@ -5,6 +5,7 @@
   import Heading from './Heading.svelte';
   import Modal from './Modal.svelte';
   import Image from './Image.svelte';
+  import Animate from './Animate.svelte';
 
   let projects = [];
 
@@ -56,19 +57,21 @@
     {/if}
 
     {#each projects as project, key}
-      <button
-        class={`relative group md:hover:rotate-1 overflow-hidden md:hover:shadow-2xl shadow-md md:hover:shadow-black/50 dark:md:hover:shadow-white/50 pointer-events-auto transition-all md:hover:scale-105 duration-300 md:hover:opacity-100 md:group-hover:[&:not(:hover)]:opacity-25`}
-        on:click={() => handleOpen(key)}
-        aria-label={`View ${project.title}`}
-      >
-        <Image
-          src={`${project.image.fields.file.url}?fm=webp`}
-          alt={project.title}
-          width="640"
-          height="360"
-          class="object-cover w-full aspect-video"
-        />
-      </button>
+      <Animate>
+        <button
+          class={`relative group md:hover:rotate-1 overflow-hidden md:hover:shadow-2xl shadow-md md:hover:shadow-black/50 dark:md:hover:shadow-white/50 pointer-events-auto transition-all md:hover:scale-105 duration-300 md:hover:opacity-100 md:group-hover:[&:not(:hover)]:opacity-25`}
+          on:click={() => handleOpen(key)}
+          aria-label={`View ${project.title}`}
+        >
+          <Image
+            src={`${project.image.fields.file.url}?fm=webp`}
+            alt={project.title}
+            width="640"
+            height="360"
+            class="object-cover w-full aspect-video"
+          />
+        </button>
+      </Animate>
     {/each}
   </div>
 </div>

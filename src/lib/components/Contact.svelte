@@ -1,6 +1,7 @@
 <script>
   import Heading from './Heading.svelte';
   import Button from './Button.svelte';
+  import Animate from './Animate.svelte';
 
   const links = [
     {
@@ -33,11 +34,13 @@
     class="grid items-center content-center gap-4 sm:grid-cols-2 md:grid-cols-4"
   >
     {#each links as link}
-      <Button href={link.url} style="outline-black" class="dark:border-white">
-        <span>{@html link.icon}</span>
+      <Animate>
+        <Button href={link.url} style="outline-black" class="dark:border-white">
+          <span>{@html link.icon}</span>
 
-        <span>{link.text}</span>
-      </Button>
+          <span>{link.text}</span>
+        </Button>
+      </Animate>
     {/each}
   </div>
 </div>
