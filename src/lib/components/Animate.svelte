@@ -16,10 +16,11 @@
   });
 </script>
 
-<div bind:this={parent}>
-  {#if isVisible}
-    <div transition:fade={{ duration: 250, delay: 100 }}>
-      <slot />
-    </div>
-  {/if}
+<div
+  class={`${
+    isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
+  } transition duration-500`}
+  bind:this={parent}
+>
+  <slot />
 </div>
