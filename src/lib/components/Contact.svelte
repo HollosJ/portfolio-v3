@@ -35,7 +35,11 @@
   >
     {#each links as link}
       <Animate>
-        <Button href={link.url} style="outline-black" class="dark:border-white">
+        <Button
+          href={link.url}
+          style="outline-black"
+          class="dark:border-white dark:hover:bg-white dark:hover:text-black"
+        >
           <span>{@html link.icon}</span>
 
           <span>{link.text}</span>

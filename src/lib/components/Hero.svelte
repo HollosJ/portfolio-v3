@@ -29,12 +29,14 @@
       <div class="grid grid-cols-2 gap-2 md:flex md:justify-end">
         <Button
           href="https://drive.google.com/file/d/1025ja3ser6s5GgM5G2Btenl25hoAtggZ/view"
-          class="text-sm dark:border-white">Download CV</Button
+          class="text-sm dark:border-white dark:hover:bg-white dark:hover:text-black"
+          >Download CV</Button
         >
 
         <Button
           href="mailto:hollosj99@gmail.com"
-          class="text-sm dark:border-white">Email Me</Button
+          class="text-sm dark:border-white dark:hover:bg-white dark:hover:text-black"
+          >Email Me</Button
         >
       </div>
     </div>
@@ -64,7 +66,7 @@
     aria-label="Jump to content"
   >
     <div
-      class="flex items-center justify-center w-12 h-12 font-bold transition-colors border-2 border-black cursor-pointer dark:border-white animate-bounce group-hover:border-jurple group-hover:text-jurple"
+      class="flex items-center justify-center w-12 h-12 font-bold transition-colors border-2 border-black cursor-pointer dark:border-white animate-bounce group-hover:border-none group-hover:text-black group-hover:bg-gradient-to-tr group-hover:from-jurple group-hover:to-pink-600"
       aria-label="Scroll Down"
     >
       &#8595;
