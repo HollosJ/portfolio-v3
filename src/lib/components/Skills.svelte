@@ -39,7 +39,7 @@
       <!-- Skill -->
       <Animate>
         <div
-          class="grid p-2 transition-all rounded bg-black/10 dark:bg-white/10 justify-items-center group"
+          class="grid p-2 transition-all bg-black/10 dark:bg-white/10 justify-items-center group"
         >
           <!-- Icon -->
           <div
