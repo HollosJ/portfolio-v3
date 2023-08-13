@@ -18,7 +18,7 @@
 <div
   class={`${
     isVisible ? 'opacity-100' : 'opacity-0 pointer-events-none'
-  } transition duration-500`}
+  } transition duration-500 delay-100`}
   bind:this={parent}
 >
   <slot />
