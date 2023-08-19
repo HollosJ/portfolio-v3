@@ -39,7 +39,7 @@
 >
   <Hero />
 
-  <div class="container grid gap-8 transition md:gap-16 md:max-w-screen-lg">
+  <div class="container grid gap-8 transition md:max-w-screen-md md:gap-16">
     <About />
 
     <Skills />
