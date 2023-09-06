@@ -42,6 +42,15 @@
         />
       {/if}
 
+      <!-- Tags -->
+      {#if project.tags}
+        <div class="flex flex-wrap justify-center gap-2">
+          {#each project.tags as tag}
+            <span class="px-2 py-1 text-sm text-white bg-black">{tag}</span>
+          {/each}
+        </div>
+      {/if}
+
       <p>
         {@html project.description}
       </p>
