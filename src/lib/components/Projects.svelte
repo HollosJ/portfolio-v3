@@ -59,17 +59,25 @@
     {#each projects as project, key}
       <Animate>
         <button
-          class={`relative group md:hover:rotate-1 overflow-hidden md:hover:shadow-2xl shadow-md md:hover:shadow-black/50 dark:md:hover:shadow-white/50 pointer-events-auto transition-all md:hover:scale-105 duration-300 md:hover:opacity-100 md:group-hover:[&:not(:hover)]:opacity-25`}
+          class={`${
+            !project.image ? 'bg-black/10 dark:bg-white/10' : ''
+          } group md:hover:rotate-1 w-full h-full grid items-center justify-center overflow-hidden md:hover:shadow-2xl shadow-md md:hover:shadow-black/50 dark:md:hover:shadow-white/50 pointer-events-auto transition-all md:hover:scale-105 duration-300 md:hover:opacity-100 md:group-hover:[&:not(:hover)]:opacity-25`}
           on:click={() => handleOpen(key)}
           aria-label={`View ${project.title}`}
         >
-          <Image
-            src={`${project.image.fields.file.url}?fm=webp`}
-            alt={project.title}
-            width="640"
-            height="360"
-            class="object-cover w-full aspect-video"
-          />
+          {#if project.image}
+            <Image
+              src={`${project.image.fields.file.url}?fm=webp`}
+              alt={project.title}
+              width="640"
+              height="360"
+              class="object-cover w-full aspect-video"
+            />
+          {:else}
+            <div class="flex items-center h-full py-8">
+              <span>{project.title}</span>
+            </div>
+          {/if}
         </button>
       </Animate>
     {/each}
