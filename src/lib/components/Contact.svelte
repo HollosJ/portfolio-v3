@@ -34,7 +34,7 @@
   >
     {#each links as link}
       <Animate>
-        <a href={link.url} class="button button--primary">
+        <a href={link.url} class="button">
           <span>{@html link.icon}</span>
 
           <span>{link.text}</span>
