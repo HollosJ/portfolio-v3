@@ -61,7 +61,7 @@
         <button
           class={`${
             !project.image ? 'bg-black/10 dark:bg-white/10' : ''
-          } group md:hover:rotate-1 w-full h-full grid items-center justify-center overflow-hidden md:hover:shadow-2xl shadow-md md:hover:shadow-black/50 dark:md:hover:shadow-white/50 pointer-events-auto transition-all md:hover:scale-105 duration-300 md:hover:opacity-100 md:group-hover:[&:not(:hover)]:opacity-25`}
+          } group md:hover:rotate-1 w-full h-full grid items-center justify-center overflow-hidden md:hover:shadow-2xl shadow-md md:hover:shadow-black/50 dark:md:hover:shadow-white/50 pointer-events-auto transition-all md:hover:scale-105 duration-300 aspect-video md:hover:opacity-100 md:group-hover:[&:not(:hover)]:opacity-25`}
           on:click={() => handleOpen(key)}
           aria-label={`View ${project.title}`}
         >
