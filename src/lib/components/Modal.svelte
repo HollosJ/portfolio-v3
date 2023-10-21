@@ -1,8 +1,6 @@
 <script>
   import { fade, blur } from 'svelte/transition';
 
-  import Button from './Button.svelte';
-
   export let open;
   export let project;
 </script>
@@ -62,7 +60,7 @@
       <!-- Links -->
       {#if project.livePreview && project.codePreview}
         <div class="grid gap-4 sm:grid-cols-2">
-          <Button href={project.livePreview} style="outline-black"
+          <a class="button--invert button" href={project.livePreview}
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -75,10 +73,10 @@
                 clip-rule="evenodd"
               />
             </svg>
-            Live Preview</Button
+            Live Preview</a
           >
 
-          <Button href={project.codePreview} style="outline-black"
+          <a class="button button--invert" href={project.codePreview}
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -92,7 +90,7 @@
               />
             </svg>
 
-            Code</Button
+            Code</a
           >
         </div>
       {/if}

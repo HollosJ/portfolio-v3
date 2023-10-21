@@ -5,7 +5,6 @@
 
   import Me from '../../assets/me.webp';
   import Image from './Image.svelte';
-  import Button from './Button.svelte';
 </script>
 
 <div class="container relative grid gap-16 py-16 md:py-24 md:max-w-screen-md">
@@ -27,17 +26,12 @@
       </div>
 
       <div class="grid grid-cols-2 gap-2 md:flex md:justify-end">
-        <Button
+        <a
           href="https://drive.google.com/file/d/1025ja3ser6s5GgM5G2Btenl25hoAtggZ/view"
-          class="text-sm dark:border-white dark:hover:bg-white dark:hover:text-black"
-          >Download CV</Button
+          class="button button--primary">Download CV</a
         >
 
-        <Button
-          href="mailto:hollosj99@gmail.com"
-          class="text-sm dark:border-white dark:hover:bg-white dark:hover:text-black"
-          >Email Me</Button
-        >
+        <a href="mailto:hollosj99@gmail.com" class="button">Email Me</a>
       </div>
     </div>
 

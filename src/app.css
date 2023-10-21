@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button {
+    @apply flex items-center justify-center gap-2 px-4 py-2 text-center transition border-2 border-black dark:border-white hover:brightness-90;
+}
+
+.button--primary {
+    @apply text-white bg-black dark:bg-white dark:text-black dark:hover:bg-white dark:hover:text-black;
+}
+
+/* Invert button (no fill) */
+.button--invert {
+    @apply text-black bg-white dark:bg-black dark:text-white dark:hover:bg-black dark:hover:text-white;
+}

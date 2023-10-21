@@ -1,6 +1,5 @@
 <script>
   import Heading from './Heading.svelte';
-  import Button from './Button.svelte';
   import Animate from './Animate.svelte';
 
   const links = [
@@ -35,15 +34,11 @@
   >
     {#each links as link}
       <Animate>
-        <Button
-          href={link.url}
-          style="outline-black"
-          class="dark:border-white dark:hover:bg-white dark:hover:text-black"
-        >
+        <a href={link.url} class="button button--primary">
           <span>{@html link.icon}</span>
 
           <span>{link.text}</span>
-        </Button>
+        </a>
       </Animate>
     {/each}
   </div>
